@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pizzaria Itália</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Vitória Teixeira" />
+    <meta name="description" content="PIZZA NUNCA FALHA!" />
+    <meta  name="keywords" content="pizza, pizzaria, comida italiana, delivery pizza" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+	<nav>	
+      <a class="menu" href="#pag-sobre">SOBRE</a>
+      <a class="menu" href="#pag-promoções">PROMOÇÕES</a>
+      <a class="menu" href="#pag-delivery">DELIVERY</a>
+	</nav>
+
+	<header>	
+			<img src="img/banner.png" alt="Banner com a logomarca" />
+	</header>
+
+	<article id="pag-sobre">
+    
+    <h1>Pizzaria Itália</h1>
+
+    <p>
+      A <span>Pizzaria Itália</span> fundada em 2000 ficou conhecida por ter
+      a melhor pizza, sua criação se deu a partir de uma viagem com destino a
+      Itália onde os fundadores se encantaram por os diversos tipos de pizzas e
+      puderam desfrutar dessa iguaria italiana em diversas pizzarias da Itália.
+      Ao chegar no Brasil seus fundadores resolveram trazer um conceito inovador
+      de pizzas. Sua criação foi insprirada em pizzarias da Itália, seus
+      ingredientes são selecionados com muita delicadeza e seu preparo é feito
+      para encantar os clientes a cada pedaço.
+    </p>
+
+    <p>
+      Sabemos que pizza nunca falha e cai bem em qualquer ocasião. Por esse
+      motivo aqui garantimos a melhor experiência e sabor. Peça uma pizza e
+      saiba o verdadeiro sabor dessa iguaria Italiana.
+    </p>
+	</article>
+
+  <section id="pag-promoções">
+    <h2>Promoções</h2>
+    <p>Essas são as pizzas que estão na promoção.</p>
+
+		<div id="container">
+			<div class="card">
+				<img src="img/pizzacalabresa.png" alt="Prato de comida contendo pizza calabresa."/>
+				<div class="card-content">
+					<h3>Pizza Calabresa</h3>
+					<p>R$ 26,90</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<img img src="img/pizzamodaitalia.png" alt="Prato de comida contendo pizza moda itália."/>
+				<div class="card-content">
+					<h3>Pizza Moda Itália</h3>
+					<p>R$ 25,90</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="img/pizzapepperoni.png" alt="Prato de comida contendo pizza pepperoni."/>
+				<div class="card-content">
+					<h3>Pizza Pepperoni</h3>
+					<p>R$ 26,90</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="img/pizzaportuguesa.png" alt="Prato de comida contendo pizza portuguesa."/>
+				<div class="card-content">
+					<h3>Pizza Portuguesa</h3>
+					<p>R$ 24,90</p>
+				</div>
+			</div>
+		</div>
+</section>
+
+    <section id="pag-delivery">
+      <h3>Delivery</h3>
+
+    	<p>Entre com essas informações para fazer o pedido.</p>
+
+    <form name="form-Delivery" method="" action="">
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="usuario@email.com" />
+
+				<label for="endereço"> Endereço: </label>
+        <input id="endereço" type="address" name="endereço" placeholder="Letras e números" />
+
+        <label for="sabor">Sabor:</label>
+        <select id="sabor" name="sabor">
+						<option value="">Selecione..</option>
+						<option value="basico">Calabresa</option>
+						<option value="interm">Moda Itália</option>
+						<option value="avancado">Pepperoni</option>
+						<option value="avancado">Portuguesa</option>
+        </select>
+
+        <label for="quantidade"> Quantidade: </label>
+        <input id="quantidade" type="number" name="quantidade" min="1" max="10" step="1" />
+
+        <fieldset>
+          <legend>Forma de Pagamento:</legend>
+					<div><input id="delivery" type="radio" name="forma de retirada" value="delivery"><label for="delivery">Delivery</label></div>
+         	<div><input id="retirar no local" type="radio" name="forma de retirada" value="retirar no local" /><label for="retirar no local">Retirar no Local</label></div>
+          
+        </fieldset>
+
+        <label for="observações">Observações</label>
+        <textarea id="observações" name="observations" cols="50" rows="5"> </textarea>
+
+				<div id="botoes-form">
+        <input type="submit" name="bt-finalizar" value="FINALIZAR" />
+        <input type="reset" name="bt-cancelar" value="CANCELAR" />
+				</div>
+				
+    	</form>
+		</section>
+     <!--<p>
+        <a href="#topo"><strong>TOPO</strong></a>
+      </p> --> 
+				<footer> 
+					<p>Desenvolvido por <a href="https://instagram/vitoriateixeira_s" target="_blank" id="author">Vitória Teixeira</a> - 2022</p>
+				</footer>
+			</body>
+</html>
